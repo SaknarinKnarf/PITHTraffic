@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pith.itdev.pithtraffic.DetailActivity"
+    android:background="@drawable/bg27">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:id="@+id/textDetailTitle"
+        android:textSize="@dimen/h1"
+        android:textColor="@color/colorText"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="@dimen/image"
+        android:layout_height="@dimen/image"
+        android:id="@+id/imvDetailView"
+        android:layout_below="@+id/textDetailTitle"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="@dimen/image"
+        android:layout_height="150dp"
+        android:id="@+id/scrollView"
+        android:fillViewport="false"
+        android:layout_below="@+id/imvDetailView"
+        android:layout_centerHorizontal="true"
+        android:background="#80ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textDetail"
+            android:textSize="@dimen/h2"
+            android:padding="15dp"
+            android:textColor="@color/colorText" />
+    </ScrollView>
+
+</RelativeLayout>
